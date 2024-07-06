@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="brian.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Movie Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#series">Web Series</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="home">
+            <h2>Welcome to My Movie Platform</h2>
+            <p>Your favorite web series and movies all in one place.</p>
+        </section>
+
+        <section id="series">
+            <h2>Popular Web Series</h2>
+            <div class="grid-container">
+                <!-- Web Series Items -->
+                <div class="grid-item">
+                    <img src="god father" alt="Series 1">
+                    <h3>God father</h3>
+                    <p>Story of real Ganster.</p>
+                    <button class="view-now" data-url="series1_view_link">View Now</button>
+                    <button class="download" data-url="series1_download_link">Download</button>
+                </div>
+                <div class="grid-item">
+                    <img src="game of thrones" alt="Series 2">
+                    <h3>Game Of Thrones</h3>
+                    <p>Some description about Series 2.</p>
+                    <button class="view-now" data-url="series2_view_link">View Now</button>
+                    <button class="download" data-url="series2_download_link">Download</button>
+                </div>
+                <!-- Add more series as needed -->
+            </div>
+        </section>
+
+        <section id="movies">
+            <h2>Popular Movies</h2>
+            <div class="grid-container">
+                <!-- Movie Items -->
+                <div class="grid-item">
+                    <img src="sam bahadur" alt="Movie 1">
+                    <h3>Sam Bhadur</h3>
+                    <p>Indian army representive.</p>
+                    <button class="view-now" data-url="movie1_view_link">View Now</button>
+                    <button class="download" data-url="movie1_download_link">Download</button>
+                </div>
+                <div class="grid-item">
+                    <img src="3 idiot" alt="Movie 2">
+                    <h3>3 Idiot</h3>
+                    <p>colleage life.</p>
+                    <button class="view-now" data-url="movie2_view_link">View Now</button>
+                    <button class="download" data-url="movie2_download_link">Download</button>
+                </div>
+                <!-- Add more movies as needed -->
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Movie Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
