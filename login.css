@@ -64,7 +64,7 @@ footer {
     width: 100%;
     bottom: 0;
 }
-#signup-container, #login-container {
+#signup-container, #login-container ,#profile-container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
@@ -99,4 +99,27 @@ form button {
 
 form button:hover {
     background-color: #555;
+}
+
+#profile-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#profile-image:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }

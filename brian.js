@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Handle Content Page
-    if (window.location.pathname.endsWith('index.html')) {
+    if (window.location.pathname.endsWith('profile.html')) {
         if (localStorage.getItem('loggedIn') === 'true') {
             const profileUsername = document.getElementById('profile-username');
             const profileEmail = document.getElementById('profile-email');
@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (profileUsername && storedData) {
                 profileUsername.textContent = storedData.username;
                 profileEmail.textContent = storedData.email;
+                
 
                 // Display downloaded movies
                 storedData.downloadedMovies.forEach(movie => {
@@ -111,6 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 signOutButton.addEventListener('click', () => {
                     localStorage.setItem('loggedIn', 'false');
                     window.location.href = 'login.html'; // Redirect to login page
+                });
+            }
+
+            // Handle Profile Image Button
+            const profileButton = document.getElementById('profile.hmtl');
+            if (profileButton) {
+                profileButton.addEventListener('click', () => {
+                    document.getElementById('profile.html').scrollIntoView({ behavior: 'smooth' });
                 });
             }
         } else {
