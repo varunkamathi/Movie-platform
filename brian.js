@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Store login status
                 localStorage.setItem('loggedIn', 'true');
                 // Redirect to content page
-                window.location.href = 'content.html';
+                window.location.href = 'index.html';
             } else {
                 alert('Invalid username or password. Please try again.');
             }
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Handle Content Page
-    if (window.location.pathname.endsWith('content.html')) {
+    if (window.location.pathname.endsWith('index.html')) {
         if (localStorage.getItem('loggedIn') === 'true') {
             const profileUsername = document.getElementById('profile-username');
             const profileEmail = document.getElementById('profile-email');
