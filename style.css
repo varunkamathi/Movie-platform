@@ -16,18 +16,7 @@ header {
     display: block;
     text-align: left;
 }
-@media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .header-right {
-      float: none;
-    }
-  }
-  
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -51,6 +40,11 @@ main {
 
 h2 {
     color: #333;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .grid-container {
