@@ -44,7 +44,9 @@ h2 {
 .main-div{
     display: flex;
     flex-direction: column;
-    width: 100%;
+}
+.bottom{
+    border-bottom: 1px solid black;
 }
 
 .grid-container {
@@ -65,6 +67,9 @@ h2 {
 .grid-item img {
     max-width: 50%;
     height: auto;
+}
+.home{
+    background-color: #7fb3d5;
 }
 
 footer {
@@ -130,4 +135,14 @@ nav ul li {
 
 nav ul li:last-child {
     margin-right: 0;
+}
+
+.home{
+    align-items: center;
+    width: 100%;
+}
+
+section{
+    align-items: center;
+    align-content: center;
 }
